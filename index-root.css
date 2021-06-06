@@ -1,0 +1,123 @@
+:root {
+  --blue: #394dff;
+  --button: #5076ff;
+}
+.nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(240, 240, 240) !important;
+  transition: 0.5s;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgb(255, 255, 255) !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(51, 51, 51) !important;
+  transition: 0.5s;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(0, 0, 0) !important;
+}
+.fixed-top {
+  transition: 0.5s;
+}
+.jumbotron-fluid .display-4 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 50px !important;
+  line-height: 61px !important;
+  color: #ffffff !important;
+}
+.jumbotron-fluid .lead {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 20px !important;
+  line-height: 27px !important;
+  color: #ededed !important;
+}
+
+.jumbotron-fluid {
+  position: relative;
+  background-color: transparent !important;
+}
+.jumbotron-fluid::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background: var(--blue);
+  top: 0;
+  border-radius: 0 0 10px 10px;
+}
+.contain-abs {
+  position: relative;
+  z-index: 1;
+}
+.m-top {
+  margin-top: 30px;
+}
+.rounded-bottom {
+  border-radius: 0 0 20px 20px !important;
+}
+.bg {
+  background: var(--blue) !important;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background: var(--button);
+  border: var(--button);
+}
+#artikelTerbaru .card,
+#artikelTerbaru img {
+  border-radius: 10px;
+}
+/* font */
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: capitalize;
+  color: #141947;
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 37px;
+  text-transform: capitalize;
+  color: #141947;
+}
+h5 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #595959;
+}
+p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #595959;
+}
+
+@media (max-width: 575.98px) {
+  .jumbotron-fluid::after {
+    height: 100%;
+  }
+}
