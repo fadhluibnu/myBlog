@@ -36,7 +36,7 @@ div {
   transition: 0.5s;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-  color: rgb(0, 0, 0) !important;
+  color: var(--blue) !important;
 }
 .fixed-top {
   transition: 0.5s;
@@ -133,6 +133,7 @@ button {
   color: #595959;
   text-decoration: none;
 }
+.p,
 p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -147,6 +148,12 @@ a {
 }
 a:hover {
   text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .card {
   border: none;
