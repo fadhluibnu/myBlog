@@ -2,6 +2,18 @@
   --blue: #0d6efd;
   --button: #005eeb;
 }
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+section,
+nav,
+div {
+  margin: 0;
+  padding: 0;
+}
 .bg-light {
   background-color: #f6fbff !important;
 }
