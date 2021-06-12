@@ -1,3 +1,7 @@
+:root {
+  --blue: #0d6efd;
+  --button: #005eeb;
+}
 nav {
   z-index: 9999;
 }
@@ -15,14 +19,31 @@ nav {
   border-radius: 10px;
 }
 .sidebar {
-  background-color: #fff;
+  background-color: rgb(0 64 255 / 6%);
 }
-.content {
-}
-.ads {
-  background-color: #fff;
-}
-
 .bayangan {
-  box-shadow: 0px 0px 12px -2px rgb(0 0 0 / 10%);
+  /* box-shadow: 0px 0px 12px -2px rgb(0 0 0 / 10%); */
+}
+.after a {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #595959;
+  text-decoration: none;
+  transition: 0.1s;
+}
+.after {
+  padding: 5px 0 5px 5px;
+  border-radius: 2px 20px 20px 2px;
+  transition: 0.1s;
+}
+.after:hover a {
+  color: white;
+}
+.after:hover {
+  cursor: pointer;
+  background-color: var(--blue);
 }
