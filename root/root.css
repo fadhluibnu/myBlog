@@ -51,7 +51,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
+  /* font-size: 32px; */
   line-height: 49px;
   text-transform: capitalize;
   color: #141947;
@@ -67,7 +67,7 @@ h4 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 22px;
+  /* font-size: 22px; */
   text-transform: capitalize;
   color: #141947;
 }
@@ -75,7 +75,7 @@ h5 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  /* font-size: 20px; */
   text-transform: capitalize;
   color: #414141;
   text-decoration: none;
@@ -91,6 +91,7 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  text-align: justify;
   text-transform: capitalize;
   color: #474747;
   text-decoration: none;
