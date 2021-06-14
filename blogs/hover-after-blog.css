@@ -1,0 +1,10 @@
+.satu:hover::after {
+  content: 'apa itu pemrogramman?';
+  display: block;
+  position: absolute;
+  z-index: 257;
+  background-color: #141947;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
