@@ -6,6 +6,9 @@ nav {
   z-index: 9999;
   padding: 16px 16px !important;
 }
+.rounded {
+  border-radius: 10px !important;
+}
 .navbar-light {
   background-color: #f6f7fa;
 }
