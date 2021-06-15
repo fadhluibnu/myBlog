@@ -5,6 +5,18 @@
   z-index: 257;
   background-color: #141947;
   color: white;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.dua:hover::after {
+  content: 'Bahasa Pemrogramman Terbaik dan Terpopuler di Tahun 2021';
+  display: block;
+  position: absolute;
+  z-index: 257;
+  background-color: #141947;
+  color: white;
+  font-size: 14px;
   padding: 5px;
   border-radius: 5px;
 }

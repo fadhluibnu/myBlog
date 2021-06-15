@@ -46,6 +46,7 @@ nav {
   border-radius: 2px 20px 20px 2px;
   transition: 0.1s; */
   margin-bottom: 5px;
+  margin-top: 5px;
   background-color: var(--blue);
 }
 .active a {
