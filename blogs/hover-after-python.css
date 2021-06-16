@@ -1,0 +1,22 @@
+.satu:hover::after {
+  content: 'Belajar Python #1 || Apa Itu Python?';
+  display: block;
+  position: absolute;
+  z-index: 257;
+  background-color: #141947;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.dua:hover::after {
+  content: 'Belajar Python #2 || Install Python Di Windows';
+  display: block;
+  position: absolute;
+  z-index: 257;
+  background-color: #141947;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+}
