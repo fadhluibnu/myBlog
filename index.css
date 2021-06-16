@@ -51,7 +51,9 @@
 }
 
 #artikelTerbaru .card,
-#artikelTerbaru img {
+#artikelTerbaru img,
+#pythonDasar .card,
+#pythonDasar img {
   border-radius: 10px;
 }
 .card {

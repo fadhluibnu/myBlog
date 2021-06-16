@@ -1,5 +1,6 @@
-.satu:hover::after {
-  content: 'Belajar Python #1 || Apa Itu Python?';
+.satu:hover::after,
+.python1:hover::after {
+  content: 'Belajar Python Dasar #1 || Apa Itu Python?';
   display: block;
   position: absolute;
   z-index: 257;
@@ -9,8 +10,9 @@
   padding: 5px;
   border-radius: 5px;
 }
-.dua:hover::after {
-  content: 'Belajar Python #2 || Install Python Di Windows';
+.dua:hover::after,
+.python2:hover::after {
+  content: 'Belajar Python Dasar #2 || Install Python Di Windows';
   display: block;
   position: absolute;
   z-index: 257;
