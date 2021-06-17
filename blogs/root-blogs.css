@@ -100,6 +100,21 @@ h5 {
   color: #414141;
   text-decoration: none;
 }
+.blockquote {
+  background: #0d6efd;
+  padding: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  border-left: 6px solid #02031b;
+  border-right: 6px solid #02031b;
+}
+.quote {
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  text-transform: capitalize;
+}
 .btn {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
