@@ -16,8 +16,8 @@ nav {
   display: block;
   z-index: -1;
   top: 50%;
-  left: -11%;
-  transform: translateX(0) translateY(-24px);
+  left: -14%;
+  transform: translateX(0) translateY(-25px);
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -35,6 +35,13 @@ nav {
 }
 .navbar-light .navbar-nav .nav-link:hover {
   color: hsl(216, 100%, 92%) !important;
+}
+.navbar-light .navbar-toggler {
+  border-color: rgb(255 255 255 / 64%);
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../img/illustration/togler.svg);
+  background-size: 80%;
 }
 .mt-5 {
   margin-top: 150px !important;
