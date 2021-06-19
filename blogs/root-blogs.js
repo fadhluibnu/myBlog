@@ -28,6 +28,25 @@ $(window).scroll(function () {
   }
 });
 
+$(document).ready(function () {
+  $('.onclick').click(function () {
+    $('.true').addClass('btn-success');
+    $('.true').removeClass('btn-primary');
+    $('.false').addClass('btn-danger');
+    $('.false').removeClass('btn-primary');
+  });
+  $('.true').click(function () {
+    $('.ans').css({
+      background: 'rgb(24 253 145 / 32%)',
+    });
+  });
+  $('.false').click(function () {
+    $('.ans').css({
+      background: 'rgb(220 53 69 / 32%)',
+    });
+  });
+});
+
 // var ads = $('.ad');
 // $(window).resize(function () {
 //   if (ads.width() < 385) {

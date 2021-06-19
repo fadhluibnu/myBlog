@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;500;600;700&display=swap');
 :root {
   --blue: #0d6efd;
   --button: #005eeb;
@@ -160,6 +161,18 @@ p {
   /* text-transform: capitalize; */
   color: #474747;
   text-decoration: none;
+}
+.ans {
+  padding: 20px 20px;
+  border-radius: 10px;
+  background-color: rgb(13 110 253 / 87%);
+  background-color: rgb(0 64 255 / 6%);
+  transition: 0.5s;
+}
+.quest {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 700;
+  font-size: 20px;
 }
 @media (max-width: 575.98px) {
   .side {
