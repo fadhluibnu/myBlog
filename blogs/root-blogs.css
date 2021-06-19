@@ -6,11 +6,34 @@ nav {
   z-index: 9999;
   padding: 16px 16px !important;
 }
+.navbar-brand {
+  position: relative;
+}
+.navbar-brand::after {
+  content: '';
+  position: absolute;
+  display: block;
+  z-index: -1;
+  top: 50%;
+  left: -11%;
+  transform: translateX(0) translateY(-24px);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+}
 .rounded {
   border-radius: 10px !important;
 }
 .navbar-light {
-  background-color: #f6f7fa;
+  background-color: #0d6efd;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fff !important;
+  transition: 0.5s;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: hsl(216, 100%, 92%) !important;
 }
 .mt-5 {
   margin-top: 150px !important;
@@ -63,6 +86,13 @@ nav {
 .after:hover {
   cursor: pointer;
   background-color: var(--blue);
+}
+h2,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 35px;
 }
 h1 {
   font-family: 'Poppins', sans-serif;

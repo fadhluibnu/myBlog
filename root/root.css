@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  background: #f6f7fa;
+  background: #edf2ff;
 }
 section,
 nav,
@@ -17,7 +17,7 @@ div {
   padding: 0;
 }
 .bg-light {
-  background-color: #f6f7fa !important;
+  background-color: #edf2ff !important;
 }
 .nav-link {
   font-family: 'Poppins', sans-serif;
