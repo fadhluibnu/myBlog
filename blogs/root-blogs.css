@@ -181,6 +181,30 @@ p {
   font-weight: 700;
   font-size: 20px;
 }
+#artikelTerbaru .card,
+#artikelTerbaru img,
+#pythonDasar .card,
+#pythonDasar img {
+  border-radius: 10px;
+}
+#artikelTerbaru h2,
+#artikelTerbaru h5,
+#artikelTerbaru h4,
+#pythonDasar h2,
+#pythonDasar h5,
+#pythonDasar h4 {
+  margin: 0;
+}
+.card {
+  border: none;
+  transition: 0.3s;
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 6px 31px -2px rgb(0 0 0 / 10%);
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+}
 @media (max-width: 575.98px) {
   .side {
     display: inline-block;
