@@ -169,7 +169,8 @@ p {
   color: #474747;
   text-decoration: none;
 }
-.ans {
+.ans,
+.ans2 {
   padding: 20px 20px;
   border-radius: 10px;
   background-color: rgb(13 110 253 / 87%);

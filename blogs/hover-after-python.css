@@ -1,5 +1,5 @@
 .python1:hover::after {
-  content: 'Belajar Python Dasar #1 || Apa Itu Python?';
+  content: 'Belajar Python Dasar #1 || Apa Itu Python ?';
   display: block;
   position: absolute;
   z-index: 257;
@@ -11,7 +11,7 @@
 }
 
 .python2:hover::after {
-  content: 'Belajar Python Dasar #2 || Install Python Di Windows';
+  content: 'Belajar Python Dasar #2 || Cara Install Python Di Windows';
   display: block;
   position: absolute;
   z-index: 257;
@@ -23,7 +23,7 @@
 }
 
 .python3:hover::after {
-  content: 'Belajar Python Dasar #3 || Python Syntax';
+  content: 'Belajar Python Dasar #3 || Cara Install IDE PyCharm Untuk Python';
   display: block;
   position: absolute;
   z-index: 257;
@@ -34,8 +34,32 @@
   border-radius: 5px;
 }
 
-.python3:hover::after {
-  content: 'Belajar Python Dasar #3 || Python Variabel';
+.python4:hover::after {
+  content: 'Belajar Python Dasar #4 || Mempelajari Syntax Python';
+  display: block;
+  position: absolute;
+  z-index: 257;
+  background-color: #141947;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.python5:hover::after {
+  content: 'Belajar Python Dasar #5 || Mengenal Apa Itu Variabel Pada Python';
+  display: block;
+  position: absolute;
+  z-index: 257;
+  background-color: #141947;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.python6:hover::after {
+  content: 'Belajar Python Dasar #6 || Python Variabel Lanjutan';
   display: block;
   position: absolute;
   z-index: 257;

@@ -29,6 +29,25 @@ $(window).scroll(function () {
 });
 
 $(document).ready(function () {
+  $('.onclick2').click(function () {
+    $('.true2').addClass('btn-success');
+    $('.true2').removeClass('btn-primary');
+    $('.false2').addClass('btn-danger');
+    $('.false2').removeClass('btn-primary');
+  });
+  $('.true2').click(function () {
+    $('.ans2').css({
+      background: 'rgb(24 253 145 / 32%)',
+    });
+  });
+  $('.false2').click(function () {
+    $('.ans2').css({
+      background: 'rgb(220 53 69 / 32%)',
+    });
+  });
+});
+
+$(document).ready(function () {
   $('.onclick').click(function () {
     $('.true').addClass('btn-success');
     $('.true').removeClass('btn-primary');

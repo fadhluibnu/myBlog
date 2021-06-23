@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet" />
     <link rel="shortcut icon" href="../img/logo/shinauKhode.ico" type="image/x-icon" />
 
-    <title>Belajar Python Dasar #4 || Mempelajari Syntax Python - Shinau Khode</title>
+    <title>Belajar Python Dasar #5 || Mengenal Apa Itu Variabel Pada Python - Shinau Khode</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg shadow fixed-top">
@@ -92,9 +92,9 @@
                 <ul>
                   <li class="after python1"><a href="belajar python dasar 1.html">Belajar Python #1...</a></li>
                   <li class="after python2"><a href="belajar python dasar 2.html">Belajar Python #2...</a></li>
-                  <li class="after python3"><a href="belajar python dasar 4.html">Belajar Python #3...</a></li>
-                  <li class="after python4 active"><a href="">Belajar Python #4...</a></li>
-                  <li class="after python5"><a href="belajar python dasar 5.html">Belajar Python #5...</a></li>
+                  <li class="after python3"><a href="belajar python dasar 3.html">Belajar Python #3...</a></li>
+                  <li class="after python4"><a href="belajar python dasar 4.html">Belajar Python #4...</a></li>
+                  <li class="after python5 active"><a href="">Belajar Python #5...</a></li>
                   <li class="after python6"><a href="belajar python dasar 6.html">Belajar Python #6...</a></li>
                 </ul>
               </div>
@@ -110,8 +110,8 @@
                   <li class="after python1"><a href="belajar python dasar 1.html">Belajar Python #1 || Apa Itu Python?</a></li>
                   <li class="after python2"><a href="belajar python dasar 2.html">Belajar Python #2 || Cara Install...</a></li>
                   <li class="after python3"><a href="belajar python dasar 3.html">Belajar Python #3 || Cara Install...</a></li>
-                  <li class="after python4 active"><a href="">Belajar Python #4 || Mempelajari...</a></li>
-                  <li class="after python5"><a href="belajar python dasar 5.html">Belajar Python #5 || Mengenal Apa...</a></li>
+                  <li class="after python4"><a href="belajar python dasar 4.html">Belajar Python #4 || Mempelajari...</a></li>
+                  <li class="after python5 active"><a href="">Belajar Python #5 || Mengenal Apa...</a></li>
                   <li class="after python6"><a href="belajar python dasar 6.html">Belajar Python Dasar #6 || Python Var...</a></li>
                 </ul>
               </div>
@@ -121,85 +121,170 @@
             </div>
           </div>
           <div class="col-12 col-md-8 content ml-0 ml-md-5">
-            <h1>Belajar Python Dasar #4 || Mempelajari Syntax Python</h1>
-            <img src="../img/picture/python dasar 4.jpg" class="img-fluid rounded mt-4 mb-4" alt="Belajar Python Dasar #4 || Mempelajari Syntax Python" />
-            <p>Sebelumnya di part 2 kita sudah mencoba meng-instal IDE untuk python dan semoga kalian berhasil dalam proses Installasi-nya.</p>
-            <p>Oke Guys Selamat Belajar</p>
-            <h2>Menjalankan Syntax Python</h2>
-            <blockquote class="blockquote">
-              <p class="quote">print() adalah sebuah perintah atau fungsi untuk mengeksekusi, menampilkan sebuah output ke layar kita.</p>
-            </blockquote>
-            <p>Untuk mengeksekusi, menampilkan atau menjalankan kode python, kita bisa menuliskan perintah :</p>
+            <h1>Belajar Python Dasar #5 || Mengenal Apa Itu Variabel Pada Python</h1>
+            <img src="../img/picture/python dasar 5.jpg" class="img-fluid rounded mt-4 mb-4" alt="Belajar Python Dasar #2 || Python Variabel" />
+            <p>Haii haloo kembali lagi di seri Tutorial Python Dasar. Nah sekarang kita sudah masuk ke part 4 jika ada yang terlewat bisa pilih di sebelah kanan di kolom biru.</p>
+            <p>
+              Oke sekarang kita akan membahas Python Variabel. Seperti yang sudah di bahasa di part sebelumnya kita sudah sedikit mambahas tentang Python Variabel. Nah di seri kali ini kita akan lebih mendalami tentang Variabel tersebut
+              sebab Variabel sangat sangat di butuhkan saat kita nantinya membuat program.
+            </p>
+            <h5>Enjoy Learning Guysss…</h5>
+            <h2>Syarat – Syarat Membuat Variabel</h2>
+            <p>Sebelum kita belajat mulai membuat variabel. Kita harus tau syarat – syarat pembuatan variabel.</p>
+            <h3>1. Variabel Terdiri dari huruf, angka dan karakter (underscore “_”)</h3>
+            <p>Dalam pembuatan sebuah variabel kita bebas menggunakan apapun entah itu angka</p>
+            <h4>• Contoh :</h4>
             <pre class="language-php">
                 <code>
-print()
+belajar_1 = ('hello world')
+_belajar1 = ('hello world 2')
+print(belajar_1)
+print(_belajar1)
                 </code>
             </pre>
-            <h4>Contoh :</h4>
+            <p>Maka jika kode di atas di run/di jalankan akan mengasilkan output</p>
             <pre class="language-php">
                 <code>
-print(“hello world”)
-                </code>
-            </pre>
-            <p>Dan perintah tersebut akan menampikan</p>
-            <pre class="language-php">
-              <code>
 hello world
-              </code>
+hello world 2 
+                </code>
             </pre>
-            <h2>Python Indentation</h2>
-            <blockquote class="blockquote">
-              <p class="quote">Indentasi adalah sebuah spasi untuk mendefinisikan sebuah blok kode program pada python.</p>
-            </blockquote>
-            <p>
-              Python indentation atau indentasi atau sering disebut spasi yang berguna untuk mendefinidikan struktur blok kode pada python. Indentasi bisa bisa dikatakan penting dalam penulisan sebuah kode program. Berikut contoh indentasi
-            </p>
-            <h4>• Contoh indentasi :</h4>
-            <img src="../img/illustration/indentation.svg" class="img-fluid rounded mt-4 mb-4" alt="Belajar Python Dasar #4 || Mempelajari Syntax Python" />
-            <p>Jika kalian menambahakan indentasi maka program di atas akan berjalan atau success saat di jalankan.</p>
-            <h4>• Contoh tanpa indentasi :</h4>
-            <img src="../img/illustration/tanpa indentation.svg" class="img-fluid rounded mt-4 mb-4" alt="Belajar Python Dasar #4 || Mempelajari Syntax Python" />
-            <p>Jika kalian tidak menambahkan indentasi seperti gambar di atas maka akan muncul sebuah error message saat program itu di jalankan.</p>
-            <h2>Python Variables</h2>
-            <p>
-              Dalam sebuah program, ada saatnya membuat penyimpanan data sementara. Untuk menyimpan data sementara kita membutuhkan sebuah Variabel. Variabel adalah sebuah lokasi untuk menyimpan/menampung di memori yang sewaktu waktu bisa
-              berubah. Jadi,,, data yang disimpan bisa berubah – ubah ya gaes.
-            </p>
-            <h4>• Contoh Varibabel</h4>
+            <h3>2. Diawali Huruf atau underscore ('_')</h3>
+            <p>Meskipun kita boleh menggunakan huruf, angka dan karakter. Namun, ada yang tidak boleh digunakan saat pembuatan sebuah variabel.</p>
+            <h4>• Contoh yang salah :</h4>
+            <pre class="language-php">
+                <code>
+1contoh = ('hello world')
+print(1contoh)
+                </code>
+            </pre>
+            <p>Jangan mengawali nama variabel dengan sebuah angka karena nanti saat di run akan terjadi error</p>
+            <h4>• Contoh yang benar :</h4>
+            <pre class="language-php">
+                <code>
+contoh1 = ('hello world')
+print(contoh1)
+                    
+                </code>
+            </pre>
+            <p>Maka akan muncul output</p>
+            <pre class="language-php">
+                <code>
+hello world
+                    
+                </code>
+            </pre>
+            <h3>3. Tidak menggunakan spasi</h3>
+            <p>Selain angka dan lain lain, dalam pembuatan sebuah variabel juga tidak boleh menggunakan spasi</p>
+            <h4>• Contoh yang salah :</h4>
+            <pre class="language-php">
+                <code>
+contoh 1 = ('hello world')
+print(contoh 1)
+                           
+                </code>
+            </pre>
+            <p>jika kalian menggunakan sepasi maka kode tersebut akan error saat di jalankan.</p>
+            <h4>jika kalian menggunakan sepasi maka kode tersebut akan error saat di jalankan.</h4>
+            <pre class="language-php">
+                <code>
+contoh_1 = ('hello world')
+print(contoh_1)
+                             
+                </code>
+            </pre>
+            <p>Maka kalian harus menggunakan underscore untuk menisahkan angka dan huruf agar tidak error nantinya.</p>
+            <h3>4. Tidak sama dengan keyword</h3>
+            <p>Kita juga dilarang menggunakan keyword saat membuat variabel. Apa itu keyword?? Keyword adalah salah satu kata kunci yang sudah di buat oeh python untuk mendefinisiakan kode program.</p>
+            <h4>• Contoh yang salah/menggunakan keyword :</h4>
+            <pre class="language-php">
+                <code>
+while = ('hello world')
+print(while)    
+                </code>
+            </pre>
+            <p>contoh diatas akan menghasilkan error saat kita run karena menggunakan while untuk membuat nama variabel. Sedikit info while termasuk ke dalam keyword yang digunakan untuk membuat sebuah pengulangan pada bahasa python.</p>
+            <h4>• Contoh Yang benar :</h4>
+            <pre class="language-php">
+                <code>
+_while = ('hello world')
+print(_while)    
+                </code>
+            </pre>
+            <p>jika kalian menulikan variabel seperti di atas maka tidak akan error jika di run. Loh kenapa gak error kan ada kata while?? Sebab sebelum kata while ada underscore sehingga while tidak lagi terbaca sebagar keyword.</p>
+            <h3>5. Case-Sensitive</h3>
+            <p>Case-sensitive yaitu saat kalian menggunakan huruf capital dan huruf kecil dalam penamaan variabel. Terus apa pengeruhnya?? Pengaruhnya adalah saat kita memanggil dengan nama variabel yang salah maka akan error.</p>
+            <h4>• Contoh :</h4>
             <pre class="language-php">
               <code>
+A = 'hello'
+print(a) 
+                  
+              </code>
+          </pre>
+            <p>
+              Jika kode di atas di jalankan akan menghasilkan error. Kenapa?? Karena kita memanggil variabel a(kecil) bukan A(capital). Sedangkan variabel yang kita buat mengunakan A(capital). Sehingga python tidak menemukan variabel A
+              (kapital) karena kita memanggil dengan a(kecil).
+            </p>
+            <h4>• Contoh Lain :</h4>
+            <pre class="language-php">
+              <code>
+d = 'Hello'
+D = 'Guys'
+print(D)        
+                  
+              </code>
+          </pre>
+            <p>Jika kita jalankan kode di atas maka akan menghasilkan.</p>
+            <pre class="language-php">
+            <code>
+Guys       
+                
+            </code>
+        </pre>
+            <p>Mmm kenapa tidak ‘Hello’ yang muncul? Karena yang kita pangil adalah D(capital) dan D(kapitan) = ‘Guys’</p>
+            <p>Oke guys sudah paham tentang syarat – syarat pembuatan variabel ??. Semoga kalian paham.</p>
+            <h2>Variabel</h2>
+            <p>Sesudah kita tau syarat – syarat pembuatan variabel. Nah sekarang kita mulai membuat variabel nih.</p>
+            <p>Hanya untuk mengingat Variabel adalah lokasi untuk menyimpan/menampung sebuah data di memori dalam sebuah program yang bisa berubah – ubah.</p>
+            <h4>• Contoh Varibabel :</h4>
+            <pre class="language-php">
+                <code>
 x = 'hello guys'
 print(x)
-                
-              </code>
+
+                </code>
             </pre>
             <p>Maka akan menghasilkan</p>
             <pre class="language-php">
+                <code>
+hello guys
+
+                </code>
+            </pre>
+            <p>huruf x diatas merupakan contoh sebuah deklarasi Variabel. Mmm Kenapa kok saat kita print(x) malah muncul hello guys?? Mmm ada yang tau??. Oke saya akan coba menjawab kenapa yang muncul hello guys.</p>
+            <p>
+              Jadi seperti ini yang terjadi dibalik layar. Sebuah kalimat hello guys akan dimasukkan atau di tampung ke variabel x. Artinya, x itu sama dengan hello guys. Jadi saat kita print(x) maka otomatis yang tampil adalah hello guys
+              karena x sama dengan hello guys.
+            </p>
+            <p>Oke sampai sini kalian paham??</p>
+            <h3>• Study Case :</h3>
+            <p>Biar tambah paham dan panas kita lakukan study case hehe</p>
+            <div class="container ans">
+              <h4 class="mt-0">Soal 1</h4>
+              <pre class="language-php">
               <code>
-hello guys 
+1benar = 'hello'
               </code>
             </pre>
-            <h2>Syntax Comments</h2>
-            <blockquote class="blockquote">
-              <p class="quote">komentar adalah sebuah kode yang tidak akan di eksekusi atau tidak di tampilkan saat kita menjalankan program tersebut.</p>
-            </blockquote>
-            <p>Tujuan membuat sebuah komentar pada kode program salah satunya digunakan untuk menandai sebuah program agar mudah di baca. Untuk membuat komentar pada python kita bisa tambahkan # pada awal kode.</p>
-            <h4>• Contoh Komentar :</h4>
-            <pre class="language-php">
-              <code>
-#ini adalah komentar
-print('belajar komentar')
-              </code>
-            </pre>
-            <p>maka akan menghasilkan output</p>
-            <pre class="language-php">
-              <code>
-belajar komentar
-              </code>
-            </pre>
-            <p class="mt-4">Oke guys mungkin itu yang bisa saya bagikan. Semoga bermanfaat dan semoga kalian berhasil dan lancar dalam belajar.</p>
-            <p>Terimakasih Guys sudah berkunjung ke blog saya. Tunggu tutorial part selanjutnya guys. Baayyyy guysss</p>
-            <p class="mt-4">Semangatttt…</p>
+              <p class="">Apakah Variabel diatas benar?</p>
+              <button type="button" class="btn btn-primary onclick true mr-5">Tidak</button>
+              <button type="button" class="btn btn-primary onclick false mt-2 mt-lg-0">Benar</button>
+            </div>
+            <p class="mt-4">Oke sepertinya saya akan bagi menjadi dua tutorial karena ini sudah terlalu panjang.</p>
+            <button type="button" class="btn btn-primary d-flex"><a href="belajar python dasar 6.html" style="color: white">Part Lanjutan</a></button>
+            <p class="mt-4">Semoga di tutorial ini kalian paham akan sebuah variabel. Terimakasih sudah berkunjung ke blog saya. Bayyyy bayyyy</p>
+            <p class="mt-4">Semangat Guys...</p>
           </div>
         </div>
       </div>
