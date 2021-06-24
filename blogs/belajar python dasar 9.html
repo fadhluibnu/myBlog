@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../root/root.css" />
+    <link rel="stylesheet" href="root-blogs.css" />
+    <link rel="stylesheet" href="hover-after-python.css" />
+    <link rel="stylesheet" href="../syntax Template/parse.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="../img/logo/shinauKhode.ico" type="image/x-icon" />
+
+    <title>Belajar Python Dasar #9 || Macam – Macam Operasi Aritmatika - Shinau Khode</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.16 135.95" style="width: 35px">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #0037ff;
+                }
+                .cls-2 {
+                  fill: #002ba5;
+                }
+              </style>
+            </defs>
+            <title>Asset 1</title>
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path
+                  class="cls-1"
+                  d="M104.33,95a11,11,0,0,1-.48,3.24,11.18,11.18,0,0,1-10.71,7.94H48.46a3.46,3.46,0,0,0-.58,0l-.31,0A11.18,11.18,0,0,1,37.21,95V68.24L57,60.7a11.19,11.19,0,0,0,2.6-1.41V72.66A11.18,11.18,0,0,0,70.77,83.84H93.14A11.18,11.18,0,0,1,104.33,95Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M134.16,65.25v59.61a11.18,11.18,0,0,1-9.7,11.09H46.91a11.19,11.19,0,0,1-9.7-11.09V113.63H99.57q.51,0,1,0t1,0a11.18,11.18,0,0,0,10.16-11.14V87.57A11.18,11.18,0,0,0,100.6,76.39H77.14A11.19,11.19,0,0,1,67,65.25V35.47a11.19,11.19,0,0,1,22.37,0v7.41A11.18,11.18,0,0,0,100.6,54.06H123A11.19,11.19,0,0,1,134.16,65.25Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M118.49,11.58a11.19,11.19,0,0,1-11.24,11.13l-17.84-.09H87.33a13.16,13.16,0,0,0-18.24-.09H67l-7.46,0h-1.2a11.18,11.18,0,0,0-19.92-.11H37.21l-8.26,0L29,11.13A11.18,11.18,0,0,1,37.21.41a10.72,10.72,0,0,1,3-.41L59.58.1,67,.14,89.41.25l18,.09A11.18,11.18,0,0,1,118.49,11.58Z"
+                />
+                <path class="cls-1" d="M59.58,59.29A11.19,11.19,0,0,1,57,60.7L37.21,68.24l-22,8.4a11.18,11.18,0,1,1-8-20.9l30-11.45V27.91a11.19,11.19,0,0,0,22.37,0v8.21l3.87,10.13A11.19,11.19,0,0,1,59.58,59.29Z" />
+                <path class="cls-2" d="M58.28,27.51a9.89,9.89,0,1,1-18.35-5.13,9.57,9.57,0,0,1,1-1.35,9.89,9.89,0,0,1,17.36,6.48Z" />
+                <path class="cls-1" d="M57.31,27a9.4,9.4,0,1,1-17.44-4.88,9.1,9.1,0,0,1,.94-1.28A9.4,9.4,0,0,1,57.31,27Z" />
+              </g>
+            </g>
+          </svg>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item ml-3 mr-3">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item ml-3 mr-3">
+              <a class="nav-link" href="playlist blogs.html">Blogs</a>
+            </li>
+            <li class="nav-item dropdown ml-3 mr-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Playlist </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="playlist python.html">Python Dasar</a></li>
+                <!-- <li><a class="dropdown-item" href="#">Another action</a></li> -->
+              </ul>
+            </li>
+            <li class="nav-item ml-3 mr-3">
+              <a class="nav-link" href="../index.html#artikelTerbaru">Materi</a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-primary d-flex"><a href="../index.html#artikelTerbaru" style="color: white">Mulai Belajar</a></button>
+        </div>
+      </div>
+    </nav>
+
+    <section id="artikel" class="mt-5">
+      <div class="container-fluid p-md-5 pt-md-2 p-4 position-relative">
+        <div class="row flex-column-reverse flex-md-row">
+          <div class="col col-md-2 mt-3 contain p-0 p-md-0">
+            <div class="row flex-column mobile sidebar position-fixed">
+              <div class="col">
+                <h3>Python Dasar</h3>
+                <ul>
+                  <li class="after python1"><a href="belajar python dasar 1.html">Belajar Python #1...</a></li>
+                  <li class="after python2"><a href="belajar python dasar 2.html">Belajar Python #2...</a></li>
+                  <li class="after python3"><a href="belajar python dasar 3.html">Belajar Python #3...</a></li>
+                  <li class="after python4"><a href="belajar python dasar 4.html">Belajar Python #4...</a></li>
+                  <li class="after python5"><a href="belajar python dasar 5.html">Belajar Python #5...</a></li>
+                  <li class="after python6"><a href="belajar python dasar 6.html">Belajar Python #6...</a></li>
+                  <li class="after python7"><a href="belajar python dasar 7.html">Belajar Python #7...</a></li>
+                  <li class="after python8"><a href="belajar python dasar 8.html">Belajar Python #8...</a></li>
+                  <li class="after python9 active"><a href="">Belajar Python #9...</a></li>
+                </ul>
+              </div>
+              <div class="col mt-5">
+                <h3>ads</h3>
+              </div>
+            </div>
+
+            <div class="row flex-column side col-12 m-auto">
+              <div class="col">
+                <h4>Python Dasar</h4>
+                <ul>
+                  <li class="after python1"><a href="belajar python dasar 1.html">Belajar Python #1 || Apa Itu Python?</a></li>
+                  <li class="after python2"><a href="belajar python dasar 2.html">Belajar Python #2 || Cara Install...</a></li>
+                  <li class="after python3"><a href="belajar python dasar 3.html">Belajar Python #3 || Cara Install...</a></li>
+                  <li class="after python4"><a href="belajar python dasar 4.html">Belajar Python #4 || Mempelajari...</a></li>
+                  <li class="after python5"><a href="belajar python dasar 5.html">Belajar Python #5 || Mengenal Apa...</a></li>
+                  <li class="after python6"><a href="belajar python dasar 6.html">Belajar Python Dasar #6 || Python V...</a></li>
+                  <li class="after python7"><a href="belajar python dasar 7.html">Belajar Python Dasar #7 || Macam – M...</a></li>
+                  <li class="after python8"><a href="belajar python dasar 8.html">Belajar Python Dasar #8 || Mengambil...</a></li>
+                  <li class="after python9 active"><a href="">Belajar Python Dasar #9 || Macam...</a></li>
+                </ul>
+              </div>
+              <div class="col mt-5">
+                <h3>ads</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-8 content ml-0 ml-md-5">
+            <h1>Belajar Python Dasar #9 || Macam – Macam Operasi Aritmatika</h1>
+            <img src="../img/picture/python dasar 9.jpg" class="img-fluid rounded mt-4 mb-4" alt="Belajar Python Dasar #9 || Macam – Macam Operasi Aritmatika" />
+            <p>
+              Hallo teman teman apa kabar nih? semoga sehat ya. Diseri kali ini kita akan membahas tentang operasi aritmatika. Operasi aritmatika pastinya juga tidak kalah penting untuk di pelajari sebab, nantinya saat kita membuat program
+              pasti akan membuat suatu perhitungan matematika, nah di situlah kita membutuhkan operasi aritmatika.
+            </p>
+            <p>Oke guys selamat belajar</p>
+            <h2>Macam – macam operasi aritmatika</h2>
+            <img src="../img/picture/aritmatika.svg" class="img-fluid rounded mt-4 mb-4" alt="Belajar Python Dasar #9 || Macam – Macam Operasi Aritmatika" />
+            <h3>1. Penjumlahan</h3>
+            <p>Penjumlahan untuk python di lambangkan dengan tanda + (tambah). Operator ini digunakan untuk menjumlahkan antar angka di python.</p>
+            <h4>• Contoh penggunaan</h4>
+            <pre class="language-php">
+                <code>
+a = 1
+b = 2
+print('hasil penjumlahan a + b adalah ', a+b)                      
+  
+                </code>
+            </pre>
+            <p>jika kode di atas di jalankan akan mengasilkan</p>
+            <pre class="language-php">
+                <code>
+hasil penjumlahan a + b adalah 3                      
+  
+                </code>
+            </pre>
+            <h4>• Contoh penggunaan lain</h4>
+            <pre class="language-php">
+                <code>
+a = 1
+b = 2
+c = a + b
+print('hasil penjumlahan 1 + 2 adalah ', c)
+  
+                </code>
+            </pre>
+            <p>maka akan menghasilkan.</p>
+            <pre class="language-php">
+                <code>
+hasil penjumlahan 1 + 2 adalah 3
+                </code>
+            </pre>
+            <h3>2. Pengurangan</h3>
+            <p>Pengurangan pada python di lambangkan dengan tanda – (kurang). Untuk operator ini biasa digunakan untuk mengurangkan angka pada program.</p>
+            <h4>• Contoh penggunaan</h4>
+            <pre class="language-php">
+                <code>
+a = 2
+b = 1
+print('hasil pengurangan a - b adalah ', a-b)                      
+  
+                </code>
+            </pre>
+            <p>jika kode di atas di jalankan akan mengasilkan</p>
+            <pre class="language-php">
+                <code>
+hasil pengurangan a - b adalah 1                     
+  
+                </code>
+            </pre>
+            <h4>• Contoh penggunaan lain</h4>
+            <pre class="language-php">
+                <code>
+a = 2
+b = 1
+c = a - b
+print('hasil pengurangan 2 - 1 adalah ', c)
+  
+                </code>
+            </pre>
+            <p>maka akan menghasilkan.</p>
+            <pre class="language-php">
+                <code>
+hasil pengurangan 2 - 1 adalah 1
+                </code>
+            </pre>
+            <h3>3. Perkalian</h3>
+            <p>Untuk perkalian pada python di lambangkan dengan tanda *(bintang). Perkalian digunakan untuk mengalikan angka pada kode program.</p>
+            <h4>• Contoh penggunaan</h4>
+            <pre class="language-php">
+                <code>
+a = 1
+b = 2
+print('hasil perkalian a x b adalah ', a*b)                      
+
+                </code>
+            </pre>
+            <p>jika kode di atas di jalankan akan mengasilkan</p>
+            <pre class="language-php">
+                <code>
+hasil perkalian a x b adalah 2                   
+
+                </code>
+            </pre>
+            <h4>• Contoh penggunaan lain</h4>
+            <pre class="language-php">
+                <code>
+a = 1
+b = 2
+c = a*b
+print('hasil perkalian 1 x 2 adalah  ', c)                      
+
+                </code>
+            </pre>
+            <p>jika kode di atas di jalankan akan mengasilkan</p>
+            <pre class="language-php">
+                <code>
+hasil perkalian 1 x 2 adalah 2                  
+
+                </code>
+            </pre>
+            <h3>4. Pemangkatan</h3>
+            <p>Nah untuk pemangkatan pada python memiliki lambang yang sedikit mirip dengan perkalian yaitu menggunakan tanda ** (bintang dua). Memangkatkan angka pada kode program.</p>
+            <h4>• Contoh penggunaan</h4>
+            <pre class="language-php">
+                <code>
+a = 2
+b = 3
+print('hasil pemangkatan a**b yaitu ', a**b)
+                    
+                </code>
+            </pre>
+            <p>jika di jalankan akan menghasilkan</p>
+            <pre class="language-php">
+                <code>
+hasil pemangkatan a**b yaitu 8                  
+                </code>
+            </pre>
+            <h5>
+              Perlu di ingat untuk pemangkatan pada angka kedua akan menjadi pemangkat bilangan pertama. Seperti contoh diatas variabel a sebagai bilangan pertama dan variabel b menjadi bilangan ke dua atau disebut sebagai pemangkatnya.
+            </h5>
+            <h3>5. Pembagian</h3>
+            <p>Pemagina pada python di lambangkan dengan tanda / (slash atau garis miring). Operator ini digunakan untuk membagi angka pada program.</p>
+            <h4>• Contoh penggunaan</h4>
+            <pre class="language-php">
+                <code>
+a = 10
+b = 5
+print('hasil pembagian a : b adalah ', a/b)
+                                    
+                </code>
+            </pre>
+            <p>jika kode di atas di jalankan akan mengasilkan</p>
+            <pre class="language-php">
+                <code>
+hasil pembagian a : b adalah 2.0
+                                    
+                </code>
+            </pre>
+            <h4>• Contoh penggunaan lain</h4>
+            <pre class="language-php">
+                <code>
+a = 10
+b = 5
+c = a/b
+print('hasil pembagian a : b adalah ', c)
+                                    
+                </code>
+            </pre>
+            <p>jika kode di atas di jalankan akan mengasilkan</p>
+            <pre class="language-php">
+                <code>
+hasil pembagian a : b adalah 2.0
+                                    
+                </code>
+            </pre>
+            <h3>6. Sisa Bagi/modulus</h3>
+            <p>
+              Mungkin ini yang sedikit berbeda dari operator lainya. Seperti namanya sisa bagi/modulus yaitu untuk mencari sisa hasil bagi antara dua angaka. Biasanya modulus ini digunakan untuk mencari tau apakah bilangan itu genap atau
+              ganjil.
+            </p>
+            <h4>• Contoh penggunaan</h4>
+            <pre class="language-php">
+                <code>
+#jika sisa hasil bagi 0 berarti genap
+#jika sisa hasil baginya lebih dari 1 berarti ganjil
+a = 5
+b = 3
+c = a%b
+print('hasil modulus c adalah ', c)
+                                    
+                </code>
+            </pre>
+            <p>jika di jalankan akan mengasilkan</p>
+            <pre class="language-php">
+                <code>
+hasil modulus c adalah 2
+                                    
+                </code>
+            </pre>
+            <p>mmm kenapa 2?? Karena untuk mencapai angka 5 kurang 2 angka dari 3</p>
+            <p>Begitu mungkin teman teman pembahas tentang operator aritmatika. Semoga bisa menambah ilmu dan pengetahuan tentang python. Dan jangan lupa nantikan part part selanjutnya guysss…</p>
+            <p>Terimakasih sudah berkunjung ke blog saya. Semoga ilmunya bermanfaat dan bila ada salah kata saya minta maaf.</p>
+            <p>Oke semagattt belajar guysss…</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ads" class="mt-3 ads">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container ad text-center">
+          <p class="lead">advertaisment</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="artikelTerbaru">
+      <div class="container text-center mt-5">
+        <div class="row">
+          <div class="col">
+            <h2>Artikel Terbaru</h2>
+            <h5>artikel atau materi yang baru saya upload</h5>
+          </div>
+        </div>
+        <div class="row mt-4 text-start justify-content-center">
+          <div class="col-lg-4 col-md-6 mb-5 mb-md-4 hover">
+            <a href="apa itu pemrograman.html">
+              <div class="card p-3">
+                <img src="../img/picture/apa itu pemrogramman.jpg" class="card-img-top" alt="apa itu pemrogramman??" />
+                <div class="card-body p-0 mt-2">
+                  <h4 class="satu">Apa itu pemrogramman??</h4>
+                  <p>Pemrograman adalah kegiatan atau proses menulis, menguji, memperbaiki, dan memelihara kode untuk suatu...</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-5 mb-md-4 hover">
+            <a href="bahasa pemrogramman terbaik dan popular.html">
+              <div class="card p-3">
+                <img src="../img/picture/bahasa pemrogramman.jpg" class="card-img-top" alt="apa itu pemrogramman??" />
+                <div class="card-body p-0 mt-2">
+                  <h4 class="dua">Bahasa Pemrogramman...</h4>
+                  <p>Bahasa pemrogramman atau bahasa komputer adalah sekumpulan instruksi standar untuk sebuah komputer.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-5">
+      <div class="container d-flex flex-column align-items-center">
+        <div class="row justify-content-between flex-column flex-md-row" style="width: 100%">
+          <div class="col">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.16 135.95" style="width: 35px">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #0037ff;
+                  }
+                  .cls-2 {
+                    fill: #002ba5;
+                  }
+                </style>
+              </defs>
+              <title>Asset 1</title>
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                  <path
+                    class="cls-1"
+                    d="M104.33,95a11,11,0,0,1-.48,3.24,11.18,11.18,0,0,1-10.71,7.94H48.46a3.46,3.46,0,0,0-.58,0l-.31,0A11.18,11.18,0,0,1,37.21,95V68.24L57,60.7a11.19,11.19,0,0,0,2.6-1.41V72.66A11.18,11.18,0,0,0,70.77,83.84H93.14A11.18,11.18,0,0,1,104.33,95Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M134.16,65.25v59.61a11.18,11.18,0,0,1-9.7,11.09H46.91a11.19,11.19,0,0,1-9.7-11.09V113.63H99.57q.51,0,1,0t1,0a11.18,11.18,0,0,0,10.16-11.14V87.57A11.18,11.18,0,0,0,100.6,76.39H77.14A11.19,11.19,0,0,1,67,65.25V35.47a11.19,11.19,0,0,1,22.37,0v7.41A11.18,11.18,0,0,0,100.6,54.06H123A11.19,11.19,0,0,1,134.16,65.25Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M118.49,11.58a11.19,11.19,0,0,1-11.24,11.13l-17.84-.09H87.33a13.16,13.16,0,0,0-18.24-.09H67l-7.46,0h-1.2a11.18,11.18,0,0,0-19.92-.11H37.21l-8.26,0L29,11.13A11.18,11.18,0,0,1,37.21.41a10.72,10.72,0,0,1,3-.41L59.58.1,67,.14,89.41.25l18,.09A11.18,11.18,0,0,1,118.49,11.58Z"
+                  />
+                  <path class="cls-1" d="M59.58,59.29A11.19,11.19,0,0,1,57,60.7L37.21,68.24l-22,8.4a11.18,11.18,0,1,1-8-20.9l30-11.45V27.91a11.19,11.19,0,0,0,22.37,0v8.21l3.87,10.13A11.19,11.19,0,0,1,59.58,59.29Z" />
+                  <path class="cls-2" d="M58.28,27.51a9.89,9.89,0,1,1-18.35-5.13,9.57,9.57,0,0,1,1-1.35,9.89,9.89,0,0,1,17.36,6.48Z" />
+                  <path class="cls-1" d="M57.31,27a9.4,9.4,0,1,1-17.44-4.88,9.1,9.1,0,0,1,.94-1.28A9.4,9.4,0,0,1,57.31,27Z" />
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="col mt-4 mt-md-0">
+            <div class="row">
+              <div class="col-6">
+                <h4>Artikel</h4>
+                <ul>
+                  <li>
+                    <a href="../index.html#artikelTerbaru" class="p">Artikel terbaru</a>
+                  </li>
+                  <!-- <li>
+                    <a href="" class="p">Materi</a>
+                  </li> -->
+                  <li><a href="../index.html#pythonDasar" class="p">Playlist</a></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <h4>Socil Media</h4>
+                <ul>
+                  <li>
+                    <a href="" target="_blank" class="p">Facebook</a>
+                  </li>
+                  <li>
+                    <a href="" target="_blank" class="p">Instagram</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <p>copyright 2021</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="../syntax Template/prism.js"></script>
+    <script src="root-blogs.js"></script>
+  </body>
+</html>
