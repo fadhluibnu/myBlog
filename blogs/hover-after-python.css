@@ -69,3 +69,27 @@
   padding: 5px;
   border-radius: 5px;
 }
+
+.python7:hover::after {
+  content: 'Belajar Python Dasar #7 || Macam – Macam Tipe Data';
+  display: block;
+  position: absolute;
+  z-index: 257;
+  background-color: #141947;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.python8:hover::after {
+  content: 'Belajar Python Dasar #8 || Mengambil Input Data Dari User';
+  display: block;
+  position: absolute;
+  z-index: 257;
+  background-color: #141947;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+}
