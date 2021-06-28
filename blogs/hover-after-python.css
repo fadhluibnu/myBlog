@@ -105,3 +105,15 @@
   padding: 5px;
   border-radius: 5px;
 }
+
+.python10:hover::after {
+  content: 'Belajar Python Dasar #9 || Membuat Program Operasi Aritmatika';
+  display: block;
+  position: absolute;
+  z-index: 257;
+  background-color: #141947;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+}
