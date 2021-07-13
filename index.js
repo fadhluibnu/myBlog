@@ -20,7 +20,7 @@ $(window).scroll(function () {
 const card = document.querySelectorAll('.card');
 card.forEach((img, i) => {
   img.dataset.aos = 'fade-up'
-  img.dataset.aosDelay = i *10
+  img.dataset.aosDelay = i *5
   img.dataset.aosDuration = 1000
 })
 AOS.init({
